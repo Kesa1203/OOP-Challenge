@@ -25,5 +25,5 @@ class Pet:
         pass
 
     def get_status(self):
-        pass
+        print(f"{self.name}'s Status - Hunger: {self.hunger}, Energy: {self.energy}, Happiness: {self.happiness}")
 
