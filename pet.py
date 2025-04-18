@@ -14,7 +14,10 @@ class Pet:
         pass
 
     def play(self):
-        pass
+        self.energy -= 2
+        self.happiness += 2
+        self.hunger += 1
+        print(f"{self.name} played! Energy: {self.energy}, Happiness: {self.happiness}, Hunger: {self.hunger}")
 
     def train(self, trick):
         pass
