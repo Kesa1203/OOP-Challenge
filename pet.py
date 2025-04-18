@@ -14,7 +14,10 @@ class Pet:
         self.energy = min(10, self.energy + 5)  # Increase energy, but not above 10
 
     def play(self):
-        pass
+        self.energy -= 2
+        self.happiness += 2
+        self.hunger += 1
+        print(f"{self.name} played! Energy: {self.energy}, Happiness: {self.happiness}, Hunger: {self.hunger}")
 
     def train(self, trick):
         self.tricks.append(trick)  # Add the new trick to the list of tricks
